@@ -18,8 +18,10 @@ public class ControlerCentral
   */
 	public ControlerCentral ()
 	{
-		System.out.println ("Sistema arrancant");
+		System.out.println ("ControlerCentral: Sistema arrancant");
 		inputOutput = new ControlerInputOutput (this);
-		System.out.println ("Adeu, Ja ha finalitzat");
+
+		inputOutput.Start ();
+		System.out.println ("ControlerCentral: Adeu, Ja ha finalitzat");
 	}
 }

@@ -5,6 +5,7 @@ import src.ControlerCentral;
 
 /* Els sub Controladors */
 import src.InputOutput.Input.ControlerInput;
+import src.InputOutput.Output.ControlerOutput;
 
 /**
   * Classe basica per a poder tenir un control tant de la entrada de dades com de la sortida
@@ -16,6 +17,7 @@ public class ControlerInputOutput
 /* Els objectes que necessito per aquest controlador */
 	private ControlerCentral	up;
 	private ControlerInput		CI;
+	private ControlerOutput		CO;
 
 /**
   * Aqui inicialitzem:
@@ -25,6 +27,14 @@ public class ControlerInputOutput
 	{
 		System.out.println ("ControlerInputOutput, ni mira la sortida");
 		up = e;
-		CI = new ControlerInput (this);
+		CI = new ControlerInput  (this);
+		CO = new ControlerOutput (this);
 	}
+
+	public void Start ()
+	{
+		CI.Read ();
+	}
+
+	public void Error (String e) { CO.Error (e); }
 }
