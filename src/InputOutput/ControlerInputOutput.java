@@ -31,10 +31,7 @@ public class ControlerInputOutput
 		CO = new ControlerOutput (this);
 	}
 
-	public void Start ()
-	{
-		CI.Read ();
-	}
+	public void Begin () { CI.Begin (); }
 
 	public void Error (String e) { CO.Error (e); }
 }

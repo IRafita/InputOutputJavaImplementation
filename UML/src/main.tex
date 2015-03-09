@@ -1,0 +1,31 @@
+\documentclass[border=2]{standalone}
+\usepackage[utf8]{inputenc}
+\usepackage[catalan]{babel}
+
+\usepackage{tikz}
+\usepackage[simplified]{pgf-umlcd}
+
+\begin{document}
+
+\begin{tikzpicture}
+
+\begin{class}[text width=8cm]{Controler Input Output}{0, 0}
+%	\attribute{lola : String}
+
+	\operation{- Start () : void}
+	\operation{- Error (String) : void}
+\end{class}
+
+%%%%%%%%%%%%%%%%%%%%% INPUT %%%%%%%%%%%%%%%%%%%%%
+\begin{class}{Controler Input}{-2, -3}
+%\implement{Controler Input Output}
+%\inherit{Controler Input Output}
+
+	\operation{- Error (String) : void}
+\end{class}
+
+\draw [umlcd style dashed line,-] (Controler Input Output.-80) -| (Controler Input);
+
+\end{tikzpicture}
+
+\end{document}

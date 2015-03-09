@@ -20,8 +20,8 @@ public class ControlerCentral
 	{
 		System.out.println ("ControlerCentral: Sistema arrancant");
 		inputOutput = new ControlerInputOutput (this);
-
-		inputOutput.Start ();
 		System.out.println ("ControlerCentral: Adeu, Ja ha finalitzat");
 	}
+
+	public void Begin () { inputOutput.Begin (); }
 }
