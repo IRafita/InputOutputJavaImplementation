@@ -5,6 +5,8 @@
 \usepackage{tikz}
 \usepackage[simplified]{pgf-umlcd}
 
+\usepackage{color}
+
 \begin{document}
 
 \begin{tikzpicture}
@@ -12,19 +14,73 @@
 \begin{class}[text width=8cm]{Controler Input Output}{0, 0}
 %	\attribute{lola : String}
 
-	\operation{- Start () : void}
+	\operation{- Begin () : void}
 	\operation{- Error (String) : void}
 \end{class}
 
 %%%%%%%%%%%%%%%%%%%%% INPUT %%%%%%%%%%%%%%%%%%%%%
-\begin{class}{Controler Input}{-2, -3}
-%\implement{Controler Input Output}
+\begin{class}{Controler Input}{-8, -6}
+\implement{Controler Input Output}
 %\inherit{Controler Input Output}
+	\operation{-o Begin () : void}
+	\operation{-o Error (String) : void}
+	\operation{-o Char (char) : void}
+\end{class}
 
+\begin{class}{Controler File}{-16, -12}
+\implement{Controler Input}
+\end{class}
+	\begin{class}{Read File}{-16, -15}
+	\implement{Controler File}
+	\end{class}
+
+
+\begin{class}{Navigate}{-17, -10}
+\implement{Controler Input}
+\end{class}
+
+\begin{class}{Controler Key}{-9, -12}
+\implement{Controler Input}
+	\operation{-o Begin () : void}
+	\operation{-x Error (String) : void}
+\end{class}
+	\begin{class}{Read Key}{-9, -15}
+	\implement{Controler Key}
+		\operation{-x Read () : char}
+	\end{class}
+
+\begin{class}{Command}{-4, -10}
+\implement{Controler Input}
+	\operation{-x Char (char) : void}
+\end{class}
+
+%\draw [umlcd style dashed line,-] (Controler Input Output.-80) -- (Controler Input);
+
+%%%%%%%%%%%%%%%%%%%%% OUTPUT %%%%%%%%%%%%%%%%%%%%%
+\begin{class}{Controler Output}{8, -6}
+\implement{Controler Input Output}
 	\operation{- Error (String) : void}
 \end{class}
 
-\draw [umlcd style dashed line,-] (Controler Input Output.-80) -| (Controler Input);
+\begin{class}{Controler File}{5, -12}
+\implement{Controler Output}
+\end{class}
+	\begin{class}{Write File}{5, -15}
+	\implement{Controler File}
+	\end{class}
+
+\begin{class}{Help}{15, -9}
+\implement{Controler Output}
+\end{class}
+
+\begin{class}{Controler Windows}{13, -12}
+\implement{Controler Output}
+	\operation{- Error (String) : void}
+\end{class}
+	\begin{class}{Write Windows}{13, -15}
+	\implement{Controler Windows}
+		\operation{- Error (String) : void}
+	\end{class}
 
 \end{tikzpicture}
 

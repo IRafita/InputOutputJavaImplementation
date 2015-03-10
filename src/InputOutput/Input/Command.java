@@ -14,5 +14,11 @@ public class Command
 	public void Char (char e)
 	{
 		System.out.println ("llegit: " + e);
+		switch (e)
+		{
+		case 'q':
+			up.Qquit ();
+			break;
+		}
 	}
 }

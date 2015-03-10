@@ -25,7 +25,7 @@ public class ControlerInputOutput
   */
 	public ControlerInputOutput (ControlerCentral e)
 	{
-		System.out.println ("ControlerInputOutput, ni mira la sortida");
+		System.out.println ("ControlerInputOutput: poc a poc progresa, ja crida pels dos costats :)");
 		up = e;
 		CI = new ControlerInput  (this);
 		CO = new ControlerOutput (this);
