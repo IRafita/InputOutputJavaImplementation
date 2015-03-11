@@ -22,7 +22,7 @@ public class ControlerInput
 	}
 
 	public void Error (String e) { up.Error (e); }
-	public void Begin () { key.Begin (); }
+	public void ReadKey () { key.Read (); }
 	public void Char (char e) { cmd.Char (e); }
-	public void Qquit () { key.False (); }
+//	public void Qquit () { key.False (); }
 }
