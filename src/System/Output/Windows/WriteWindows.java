@@ -1,4 +1,4 @@
-package src.InputOutput.Output.Windows;
+package src.System.Output.Windows;
 
 public class WriteWindows
 {

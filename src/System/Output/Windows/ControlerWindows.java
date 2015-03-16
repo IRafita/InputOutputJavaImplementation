@@ -1,7 +1,4 @@
-package src.InputOutput.Output.Windows;
-
-/* El Controlador superior */
-import src.InputOutput.Output.ControlerOutput;
+package src.System.Output.Windows;
 
 public class ControlerWindows
 {

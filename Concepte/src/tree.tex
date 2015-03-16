@@ -1,0 +1,46 @@
+\documentclass[border=2]{standalone}
+\usepackage[utf8]{inputenc}
+
+\usepackage{qtree}
+
+\begin{document}
+
+\Tree [.Main [.{Controler Central}
+%
+	[.Altres
+% No fa res mes que llegir... Tant burro com util que es
+		[.{Controler Input}
+			[.{Controler Key} {Read Key} ]
+			[.{Controler File} {Read File} ]
+		]
+%
+% Poca cosa, escriu i te per a acabar de completar si se vol un Latex, o documentacio de help
+		[.{Controler Output}
+			{\LaTeX} 
+			[.{Controler File} {Write File} ]
+			help
+			[.{Controler Windows} {Write Windows} ]
+		]
+%
+% Una forma diferent, basicament perque ho trobo a faltar pel meu gust
+		[.{Controler Navigate}
+			{Save Navigate}
+		]
+%
+% Stil like vim
+		[.{Controler Modes}
+			C1
+			C2
+			C3
+% La gran ilucio d'aquest gran programa, es arribar a crear alguna cosa pareguda a aquesta
+			[.C4 [.Command [.Create [.new [.Command ] ] ] ] ]
+		]
+	]
+	Parser
+	[.Calculadora
+		Funcions
+		[.Digits Reals ]
+	]
+] ]
+
+\end{document}

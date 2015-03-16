@@ -1,4 +1,4 @@
-package src.InputOutput.Input.Key;
+package src.System.Input.Key;
 
 /* Classes propies de Java que necessito */
 import java.io.Console;
@@ -18,13 +18,14 @@ public class ReadKey
 	public ReadKey (ControlerKey e)
 	{
 		System.out.println (" - ReadKey: Suposo que ja llegeix correctament");
+		System.out.println ("RedKey: Com efectuat canvis, ja no es correcte");
 		up = e;
 
 		Console console	= System.console ();
 		reader		= console.reader ();
 	}
 
-	public char Read () {
-		try			{ return (char) reader.read (); }
-		catch (IOException ex)	{ up.Error (ex.toString ()); } return '~'; }
+//	public char Read () {
+//		try			{ return (char) reader.read (); }
+//		catch (IOException ex)	{ up.Error (ex.toString ()); } return '~'; }
 }

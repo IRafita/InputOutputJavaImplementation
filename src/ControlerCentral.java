@@ -1,7 +1,7 @@
 package src;
 
 /* Els objectes que farem anar */
-import src.InputOutput.ControlerInputOutput;
+import src.System.ControlerSystem;
 
 /**
   * Tronc principal de tot el programa
@@ -11,7 +11,7 @@ import src.InputOutput.ControlerInputOutput;
 public class ControlerCentral
 {
 /* Els objectes que necessito per aquest controlador */
-	private ControlerInputOutput inputOutput;
+	private ControlerSystem system;
 
 /**
   * Inicialitza tot el sistema
@@ -19,9 +19,9 @@ public class ControlerCentral
 	public ControlerCentral ()
 	{
 		System.out.println ("ControlerCentral: Sistema arrancant");
-		inputOutput = new ControlerInputOutput (this);
+		system = new ControlerSystem (this);
 		System.out.println ("ControlerCentral: Adeu, Ja ha finalitzat");
 	}
 
-	public void Begin () { inputOutput.Begin (); }
+	public void Begin () {}// inputOutput.Begin (); }
 }
