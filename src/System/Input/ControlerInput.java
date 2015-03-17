@@ -23,6 +23,6 @@ public class ControlerInput
 	}
 
 //	public void Error (String e) { up.Error (e); }
-//	public void ReadKey () { key.Read (); }
+	public char ReadKey () { return key.Read (); }
 //	public void Char (char e) { cmd.Char (e); }
 }

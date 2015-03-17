@@ -25,7 +25,8 @@ public class ReadKey
 		reader		= console.reader ();
 	}
 
-//	public char Read () {
-//		try			{ return (char) reader.read (); }
-//		catch (IOException ex)	{ up.Error (ex.toString ()); } return '~'; }
+	public char Read () {
+		try			{ return (char) reader.read (); }
+		catch (IOException ex)	{}// up.Error (ex.toString ()); } return '~'; }
+		return '~'; }
 }

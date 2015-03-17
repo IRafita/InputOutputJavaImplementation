@@ -17,5 +17,5 @@ public class ControlerKey
 	}
 
 //	public void Error (String e) { up.Error ("Error amb el teclat:\n" + e); }
-//	public void Read () { up.Char (key.Read ()); }
+	public char Read () { return key.Read (); }
 }

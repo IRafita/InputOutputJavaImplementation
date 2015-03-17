@@ -23,7 +23,9 @@ public class ControlerSystem
 	private ControlerModes		modes;
 	private ControlerNavigate	navigate;
 
-
+/**
+  * Inicialitzant tot el apartat de controlar el systema
+  */
 	public ControlerSystem (ControlerCentral e)
 	{
 		System.out.println ("C.System: Almenys, crida a tothom que ha de cridar");
@@ -35,4 +37,11 @@ public class ControlerSystem
 		modes		= new ControlerModes	(this);
 		navigate	= new ControlerNavigate	(this);
 	}
+
+/**
+  * Pregunta caracters
+  */
+	public char ReadKey		()		{ return input.ReadKey (); }
+	public void ShowWindows	(String e)	{ output.ShowWindows (e); }
+	public void Tst () { modes.Tst (); }
 }

@@ -23,5 +23,5 @@ public class ControlerCentral
 		System.out.println ("ControlerCentral: Adeu, Ja ha finalitzat");
 	}
 
-	public void Begin () {}// inputOutput.Begin (); }
+	public void Begin () { system.Tst (); }// no pot ser el nom de Begin...
 }

@@ -11,5 +11,6 @@ public class ControlerWindows
 		windows = new WriteWindows ();
 	}
 
-	public void Error (String e) { windows.Error (e); }
+//	public void Error (String e) { windows.Error (e); }
+	public void Show (String e) { windows.Write (e); }
 }

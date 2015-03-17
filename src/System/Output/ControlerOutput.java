@@ -24,5 +24,6 @@ public class ControlerOutput
 		help	= new Help		();
 	}
 
-	public void Error (String e) { windows.Error (e); }
+//	public void Error (String e) { windows.Error (e); }
+	public void ShowWindows (String e) { windows.Show (e); }
 }

@@ -14,3 +14,10 @@ Esque no tinc internet per a obrir les webs...
 - https://www.overleaf.com/latex/templates/uml-diagrams-with-tikz-uml/ftfzzpmwnjqw
 - http://pgf-umlcd.googlecode.com/git/release/pgf-umlcd-0.2.1/pgf-umlcd-manual.pdf
 - http://osl.ugr.es/CTAN/graphics/pstricks/contrib/uml/uml.pdf
+
+
+
+Nova meta:
+
+Almenys, les entrades, podran ser transformades en LaTeX, per aixi visualitzar si el que volies fer ha sigut correctament
+interpretat per aquesta preciosa de calculadora :)
