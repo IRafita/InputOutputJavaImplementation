@@ -21,3 +21,7 @@ Nova meta:
 
 Almenys, les entrades, podran ser transformades en LaTeX, per aixi visualitzar si el que volies fer ha sigut correctament
 interpretat per aquesta preciosa de calculadora :)
+
+Plantejament:
+- Com fer lluita entre Model i Commandes, son diferents pero han d'estar ben communicades entre elles
+- com plantejar el problema de variables, digits, funcions etc, per a poder transformar en latex just despres

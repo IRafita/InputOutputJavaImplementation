@@ -41,7 +41,7 @@ public class ControlerSystem
 /**
   * Pregunta caracters
   */
-	public char ReadKey		()		{ return input.ReadKey (); }
+	public char ReadKey	()		{ return input.ReadKey (); }
 	public void ShowWindows	(String e)	{ output.ShowWindows (e); }
-	public void Tst () { modes.Tst (); }
+	public void Begin	()		{ modes.Tst (); }
 }
