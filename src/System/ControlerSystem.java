@@ -43,5 +43,5 @@ public class ControlerSystem
   */
 	public char ReadKey	()		{ return input.ReadKey (); }
 	public void ShowWindows	(String e)	{ output.ShowWindows (e); }
-	public void Begin	()		{ modes.Tst (); }
+	public void Normal	()		{ modes.NormalNormalKey (); }
 }

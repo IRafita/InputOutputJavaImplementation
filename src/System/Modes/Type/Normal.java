@@ -3,26 +3,21 @@ package src.System.Modes.Type;
 /* El Controlador superior */
 import src.System.Modes.ControlerModes;
 
+/* Les commandes que necessita */
+import src.System.Modes.Command.CommandNormal;
+
 public class Normal
 {
 /* Els objectes que necessito per aquest mode */
-	ControlerModes up;
+	private ControlerModes	up;
+	private CommandNormal	cmd;
 
 	public Normal (ControlerModes e)
 	{
-		System.out.println ("Normal: nomes per comprovar que puc fer anar-ho tot des d'aqui");
-		up = e;
+		System.out.println ("Normal:'mode' ara command qui fa tot");
+		up	= e;
+		cmd	= new CommandNormal (e);
 	}
 
-	public void Ximplet ()
-	{
-	char e;
-	while (true)
-	{
-		e = up.ReadKey	();
-		up.ShowWindows	("llegit: " + (int)e + "\t" + e);
-		if (e == 'q')
-			break;
-	}
-	}
+	public void NormalKey () { cmd.Char (up.ReadKey ()); }
 }

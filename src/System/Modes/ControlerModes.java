@@ -7,22 +7,25 @@ import src.System.ControlerSystem;
 // El plantejament de makejar es curios. ja veurem que arribarem a fer
 /* Els sub Controladors */
 import src.System.Modes.Type.Normal;
+import src.System.Modes.Type.WriteTyped;
 
 public class ControlerModes
 {
 /* Els objectes que necessito per aquest controlador */
 	private ControlerSystem	up;
 	private Normal		normal;
+	private WriteTyped	WT;
 
 	public ControlerModes (ControlerSystem e)
 	{
 		System.out.println ("Controler Modes: No fa RES");
 		up	= e;
-		normal	= new Normal (this);
+		normal	= new Normal		(this);
+		WT	= new WriteTyped	(this);
 	}
 
-	public char ReadKey () { return up.ReadKey (); }
-
+	public char ReadKey		() { return up.ReadKey (); }
 	public void ShowWindows (String e) { up.ShowWindows (e); }
-	public void Tst () { normal.Ximplet (); }
+	public void NormalNormalKey	() { normal.NormalKey (); }
+	public void WriteTypedKey	() { WT.NormalKey (); }
 }
