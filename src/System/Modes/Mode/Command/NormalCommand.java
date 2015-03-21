@@ -1,32 +1,31 @@
-package src.System.Modes.Command;
+package src.System.Modes.Mode.Command;
 
 /* El Controlador superior */
 import src.System.Modes.ControlerModes;
 
-public class CommandNormal
+public class NormalCommand
 {
 /* Els objectes que necessito per aquesta classe */
 	private ControlerModes		up;
-	private CommandWriteTyped	WT;
 
-	public CommandNormal (ControlerModes e)
+	public NormalCommand (ControlerModes e)
 	{
 		System.out.println ("CommandNormal: Inicialitzant les commandes normals");
 		up		= e;
-		WT		= new CommandWriteTyped (e);
 	}
 
 /* Comenzo a dubtar si aixo ha d'estar aqui :) */
-	public void Char (char e)
+	public void Char ()
 	{
-		System.out.println ("llegit: " + (int) e);
+		char e = up.ReadKey ();
+		up.ShowWindows ("llegit: " + (int) e);
 		switch (e)
 		{
 		case 'c':
 			switch (up.ReadKey ())
 			{
 			case 'd': //digit
-				WT.Char (up.ReadKey ());
+				up.WriteTypedKey ();
 				e = 'q';
 				break;
 			default: break;

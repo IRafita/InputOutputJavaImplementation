@@ -1,23 +1,21 @@
-package src.System.Modes.Type;
+package src.System.Modes.Mode;
 
 /* El Controlador superior */
 import src.System.Modes.ControlerModes;
 
 /* Les commandes que necessita */
-import src.System.Modes.Command.CommandNormal;
+import src.System.Modes.Mode.Command.NormalCommand;
 
 public class Normal
 {
 /* Els objectes que necessito per aquest mode */
-	private ControlerModes	up;
-	private CommandNormal	cmd;
+	private NormalCommand	cmd;
 
 	public Normal (ControlerModes e)
 	{
 		System.out.println ("Normal:'mode' ara command qui fa tot");
-		up	= e;
-		cmd	= new CommandNormal (e);
+		cmd	= new NormalCommand (e);
 	}
 
-	public void NormalKey () { cmd.Char (up.ReadKey ()); }
+	public void NormalKey () { cmd.Char (); }
 }

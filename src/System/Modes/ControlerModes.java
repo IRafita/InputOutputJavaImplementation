@@ -6,8 +6,8 @@ import src.System.ControlerSystem;
 // Aquest pot asustar pel nombre que pot arribar a qui?
 // El plantejament de makejar es curios. ja veurem que arribarem a fer
 /* Els sub Controladors */
-import src.System.Modes.Type.Normal;
-import src.System.Modes.Type.WriteTyped;
+import src.System.Modes.Mode.Normal;
+import src.System.Modes.Mode.WriteTyped;
 
 public class ControlerModes
 {
