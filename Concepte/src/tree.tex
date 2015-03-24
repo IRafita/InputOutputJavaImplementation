@@ -7,20 +7,21 @@
 
 \Tree [.Main [.{Controler Central}
 %
-	[.Altres
+	[.Systema
 % No fa res mes que llegir... Tant burro com util que es
 		[.{Controler Input}
 			[.{Controler Key} {Read Key} ]
 			[.{Controler File} {Read File} ]
 		]
 %
+%
 % Poca cosa, escriu i te per a acabar de completar si se vol un Latex, o documentacio de help
 		[.{Controler Output}
-			{\LaTeX}
 			[.{Controler File} {Write File} ]
-			help
 			[.{Controler Windows} {Write Windows} ]
 		]
+%
+		[.help {\LaTeX} ]
 %
 % Una forma diferent, basicament perque ho trobo a faltar pel meu gust
 		[.{Controler Navigate}
@@ -36,10 +37,31 @@
 			[.C4 [.Command [.Create [.new [.Command ] ] ] ] ]
 		]
 	]
-	Parser
+	[.Parser {Shuting Yard Algorithm} ]
 	[.Calculadora
-		Funcions
-		[.Digits Reals ]
+		[.Funcions
+			[.Binari
+				Modul
+				Suma
+				Resta
+			]
+			[.Definit
+				Maxim
+				Minim
+				Mitjana
+			]
+			[.Indefinit Contador ]
+		]
+		[.Valor
+			[.Definits
+				Real
+				[.Racional Natural Enter ]
+			]
+			[.Variable
+				Real
+				[.Racional Natural Enter ]
+			]
+		]
 	]
 ] ]
 
