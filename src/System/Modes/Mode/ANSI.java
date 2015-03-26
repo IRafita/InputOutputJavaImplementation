@@ -4,7 +4,7 @@ package src.System.Modes.Mode;
 import src.System.Modes.ControlerModes;
 
 /* Les commandes que necessita */
-import src.System.Modes.Mode.Command.ANSI;
+//import src.System.Modes.Mode.Command.ANSI;
 
 public class ANSI
 {

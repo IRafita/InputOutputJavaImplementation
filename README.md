@@ -2,8 +2,22 @@ si vols els pdf, doncs no se com automatitzar-ho
 Quan funcioni degudament sera un make dins de concepte i punt.
 
 Si vols executar el projecte ve a ser un
+-
 - make
-- sh rrr.sh
+- make run
+
+Si vols documentacio
+-
+- make doc
+
+estudiar casos
+ Latex
+
+ We provides a javadoc under Postscript format, made with Latex. You can find the Mascopt Lib javadoc postscript in docs/tex. To generate the latex file of Mascopt Dev, just run:
+
+ ant javadocTex
+
+
 
 
 Projecte actual, abans de progresar sense saber molt be on anar a parar. Prefeririem crear un model de domini

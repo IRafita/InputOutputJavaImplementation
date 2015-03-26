@@ -1,3 +1,8 @@
-Comenzo a dubtar de si he de tenir el conector al pare o no.
+Fet:
 
-Ara que hi penso, si el pogues evitar millor que millor jaja
+Per teclat tot funciona correctament
+
+
+Fitxer,
+	necessita de Navigate, per ara ho te un pelet complicat.
+	en un futur proxim aixo funcionarà

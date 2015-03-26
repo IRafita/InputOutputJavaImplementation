@@ -7,7 +7,7 @@ import java.io.Reader;
 
 /**
   * Aquest te una feina forza simple, nomes cal que pugui llegir el teclat
-  * Cada cop que llegeix un caracter, l'enviara fins a Commandes, on ell sabra que fer-ne
+  * Cada cop que llegeix un caracter, l'enviara fins a Mode-Commandes, on ell sabra que fer-ne
   */
 public class ReadKey
 {
@@ -17,8 +17,6 @@ public class ReadKey
 
 	public ReadKey (ControlerKey e)
 	{
-		System.out.println (" - ReadKey: Suposo que ja llegeix correctament");
-		System.out.println ("RedKey: Com efectuat canvis, ja no es correcte");
 		up = e;
 
 		Console console	= System.console ();
@@ -27,6 +25,5 @@ public class ReadKey
 
 	public char Read () {
 		try			{ return (char) reader.read (); }
-		catch (IOException ex)	{}// up.Error (ex.toString ()); } return '~'; }
-		return '~'; }
+		catch (IOException ex)	{ up.Error ("Error al teclat ReadKey\n" + ex.toString ()); return '~'; } }
 }

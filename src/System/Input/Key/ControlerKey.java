@@ -11,11 +11,10 @@ public class ControlerKey
 
 	public ControlerKey (ControlerInput e)
 	{
-		System.out.println ("ControlerKey: Casi casi puc llegir text // Nomes cal inicialitzar la lectura");
 		up	= e;
 		key	= new ReadKey (this);
 	}
 
-//	public void Error (String e) { up.Error ("Error amb el teclat:\n" + e); }
+	public void Error (String e) { up.Error (e); }
 	public char Read () { return key.Read (); }
 }

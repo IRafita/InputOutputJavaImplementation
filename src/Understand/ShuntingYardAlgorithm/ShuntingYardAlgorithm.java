@@ -6,9 +6,10 @@ import java.util.ArrayList;
 public class ShuntingYardAlgorithm
 {
 /* Classes necessaries per aquesta classe */
-	ControlerShuntingYardAlgorithm e;
-	public ShuntingYardAlgorithm (ControlerShuntingYardAlgorithm e)
+//	private ControlerShuntingYardAlgorithm e;
+//	public ShuntingYardAlgorithm (ControlerShuntingYardAlgorithm e)
+	public ShuntingYardAlgorithm ()
 	{
-		up = e;
+	//	up = e;
 	}
 }

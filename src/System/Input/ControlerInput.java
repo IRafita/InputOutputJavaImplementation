@@ -22,7 +22,6 @@ public class ControlerInput
 		file	= new ControlerFile	(this);
 	}
 
-//	public void Error (String e) { up.Error (e); }
+	public void Error (String e) {}// up.Error (e); }
 	public char ReadKey () { return key.Read (); }
-//	public void Char (char e) { cmd.Char (e); }
 }
