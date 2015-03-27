@@ -39,3 +39,6 @@ interpretat per aquesta preciosa de calculadora :)
 Plantejament:
 - Com fer lluita entre Model i Commandes, son diferents pero han d'estar ben communicades entre elles
 - com plantejar el problema de variables, digits, funcions etc, per a poder transformar en latex just despres
+
+Ara tic que vull que la calculadora faci de calculadora.
+Les bases, ja les faré més endavant, sino no progreso

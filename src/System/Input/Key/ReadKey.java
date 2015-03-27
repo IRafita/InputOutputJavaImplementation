@@ -8,6 +8,8 @@ import java.io.Reader;
 /**
   * Aquest te una feina forza simple, nomes cal que pugui llegir el teclat
   * Cada cop que llegeix un caracter, l'enviara fins a Mode-Commandes, on ell sabra que fer-ne
+  *
+  * També dotat per a generar error "pasara si no funciones amb consola, clar està"
   */
 public class ReadKey
 {
@@ -15,6 +17,11 @@ public class ReadKey
 	private ControlerKey	up;
 	private Reader		reader;
 
+/**
+  * Inicialitzador del Input Key
+  *
+  * Ara és quan un realitza que ja no recorda absolutament res de res de com generar un javadoc jajajaja
+  */
 	public ReadKey (ControlerKey e)
 	{
 		up = e;
