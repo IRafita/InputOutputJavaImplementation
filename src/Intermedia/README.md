@@ -1,5 +1,12 @@
 Doncs si, fins ara no he fet res
 
+
+dom mar 29 13:16:54 CEST 2015
+=
+Resulta ser que començo a veure que aquest apartat començarà a ser exageradament gran.
+Te moltissimes possiblitats entre altres. Serà un gran interpret :)
+
+Vell
 Pero
 ====
 

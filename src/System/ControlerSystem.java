@@ -12,6 +12,20 @@ import src.System.Modes.ControlerModes;
 import src.System.Navigate.ControlerNavigate;
 
 
+/**
+  * El controlador del Systema
+  *
+  * Simula gairebe un sistema operatiu
+  * Aquest te com a projecte controlar:
+  * - Temps
+  * - Temperatura
+  * - CPU
+  * - RAM
+  * - Entrada
+  * - Sortida
+  * - Navegacio
+  * - Modes
+  */
 public class ControlerSystem
 {
 /* Els objectes que necessito per aquest controlador */
@@ -25,10 +39,17 @@ public class ControlerSystem
 
 /**
   * Inicialitzant tot el apartat de controlar el systema
+  *
+  * Tenim:
+  * - Input
+  * - Output
+  * - Modes
+  * - Navigate
+  *
+  * On tots ells son basics, menys el modes, que es per a simplificar l'Interpret
   */
 	public ControlerSystem (ControlerCentral e)
 	{
-		System.out.println ("C.System: Almenys, crida a tothom que ha de cridar");
 		up		= e;
 
 		input		= new ControlerInput	(this);
@@ -41,7 +62,7 @@ public class ControlerSystem
 /**
   * Pregunta caracters
   */
-	public char ReadKey	()		{ return input.ReadKey (); }
-	public void ShowWindows	(String e)	{ output.ShowWindows (e); }
-	public void Normal	()		{ modes.NormalNormalKey (); }
+	public char ReadKey	()		{ return input.ReadKey	();	}
+	public void ShowWindows	(String e)	{ output.ShowWindows	(e);	}
+	public void Normal	()		{ modes.NormalNormalKey	();	}
 }

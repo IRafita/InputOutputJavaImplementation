@@ -1,5 +1,7 @@
 Aixi com a petita idea
 
+Taria força be si aquest comenses a tenir una petita pinta d'acabadet...
+
 Calcul
 ======
 Controlar
@@ -7,6 +9,7 @@ Controlar
 - CPU
 - RAM
 - Temps
+- Temperatura
 
 on la ram es la mes greu
 el temps es un factor de possiblitat
