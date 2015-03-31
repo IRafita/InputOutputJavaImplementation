@@ -1,7 +1,7 @@
-package src.Understand.ShuntingYardAlgorithm;
+package src.Translate.ShuntingYardAlgorithm;
 
 /* El Controlador superior */
-package src.Understand.ControlerUnderstand;
+import src.Translate.ControlerTranslate;
 
 /**
   * Plantilla per ajudar-me a fer codi amb un cert ordre, copiat de ControlerInput el 27-3-2015 a les 0:50
@@ -9,9 +9,9 @@ package src.Understand.ControlerUnderstand;
 public class ControlerShuntingYardAlgorithm
 {
 /* Els objectes que necessito per aquest controlador */
-	private ControlerUnderstand	up;
+	private ControlerTranslate	up;
 
-	public ControlerUnderstand (ControlerUnderstand e)
+	public ControlerShuntingYardAlgorithm (ControlerTranslate e)
 	{
 		up	= e;
 	}

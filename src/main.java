@@ -9,7 +9,7 @@ public class main
 {
 	public static void main (String [] args)
 	{
-		ControlerCentral lola = new ControlerCentral ();
+		InicialitzadorCentral lola = new InicialitzadorCentral ();
 		lola.Begin ();
 	}
 }
