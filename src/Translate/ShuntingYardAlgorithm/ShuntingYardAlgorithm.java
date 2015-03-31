@@ -1,4 +1,4 @@
-package src.Understand.ShuntingYardAlgorithm;
+package src.Translate.ShuntingYardAlgorithm;
 
 /* Classes propies de Java que necessito */
 import java.util.ArrayList;

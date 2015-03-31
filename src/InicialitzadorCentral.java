@@ -1,7 +1,7 @@
 package src;
 
 /* Els objectes que farem anar */
-import src.System.ControlerSystem;
+import src.System.InicialitzadorSystem;
 import src.Intermedia.ControlerIntermedia_HumaMaquina_;
 
 /**
@@ -12,8 +12,8 @@ import src.Intermedia.ControlerIntermedia_HumaMaquina_;
 public class InicialitzadorCentral
 {
 /* Els objectes que necessito per aquest controlador */
-	private ControlerSystem		system;
-	private ControlerIntermedia	intermedia;
+	private InicialitzadorSystem			system;
+	private ControlerIntermedia_HumaMaquina_	intermedia;
 
 /**
   * Inicialitza tot el sistema
@@ -21,8 +21,8 @@ public class InicialitzadorCentral
 	public InicialitzadorCentral ()
 	{
 		System.out.println ("ControlerCentral: Sistema arrancant");
-		system		= new ControlerSystem		(this);
-		intermedia	= new ControlerIntermedia	(this);
+		system		= new InicialitzadorSystem		(this);
+		intermedia	= new ControlerIntermedia_HumaMaquina_	(this);
 		System.out.println ("ControlerCentral: Adeu, Ja ha finalitzat");
 	}
 

@@ -1,15 +1,15 @@
 package src.System.Input.Key;
 
 /* El Controlador superior */
-import src.System.Input.ControlerInput;
+import src.System.Input.InicialitzadorInput;
 
 public class ControlerKey
 {
 /* Els objectes que necessito per aquest controlador */
-	private ControlerInput	up;
-	private ReadKey		key;
+	private InicialitzadorInput	up;
+	private ReadKey			key;
 
-	public ControlerKey (ControlerInput e)
+	public ControlerKey (InicialitzadorInput e)
 	{
 		up	= e;
 		key	= new ReadKey (this);

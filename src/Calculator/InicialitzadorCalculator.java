@@ -1,10 +1,10 @@
 package src.Calculator;
 
 /* El Controlador superior */
-import src.ControlerCentral;
+import src.InicialitzadorCentral;
 
 /* Els sub Controladors */
 
-public class ControlerCalculator
+public class InicialitzadorCalculator
 {
 }

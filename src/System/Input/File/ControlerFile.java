@@ -1,15 +1,15 @@
 package src.System.Input.File;
 
 /* El Controlador superior */
-import src.System.Input.ControlerInput;
+import src.System.Input.InicialitzadorInput;
 
 public class ControlerFile
 {
 /* Els objectes que necessito per aquest controlador */
-	private ControlerInput	up;
-	private ReadFile	file;
+	private InicialitzadorInput	up;
+	private ReadFile		file;
 
-	public ControlerFile (ControlerInput e)
+	public ControlerFile (InicialitzadorInput e)
 	{
 		System.out.println ("ControlerFile: Te pinta de facil");
 		up	= e;

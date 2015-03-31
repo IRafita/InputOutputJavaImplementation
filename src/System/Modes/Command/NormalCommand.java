@@ -1,14 +1,14 @@
-package src.System.Modes.Mode.Command;
+package src.System.Modes.Command;
 
 /* El Controlador superior */
-import src.System.Modes.ControlerModes;
+import src.System.Modes.InicialitzadorModes;
 
 public class NormalCommand
 {
 /* Els objectes que necessito per aquesta classe */
-	private ControlerModes		up;
+	private InicialitzadorModes		up;
 
-	public NormalCommand (ControlerModes e)
+	public NormalCommand (InicialitzadorModes e)
 	{
 		System.out.println ("CommandNormal: Inicialitzant les commandes normals");
 		up		= e;

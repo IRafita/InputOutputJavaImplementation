@@ -7,13 +7,13 @@ import src.System.Output.File.ControlerFile;
 /**
   * Com que nomes es de sortida, no necessita ni coneixer al seu pare
   */
-public class ControlerOutput
+public class InicialitzadorOutput
 {
 /* Els objectes que necessito per aquest controlador */
 	private ControlerWindows	windows;
 	private ControlerFile		file;
 
-	public ControlerOutput ()
+	public InicialitzadorOutput ()
 	{
 		System.out.println ("ControlerOutput: Discutible up // ni file ni help");
 		windows	= new ControlerWindows	();

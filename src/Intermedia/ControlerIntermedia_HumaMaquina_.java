@@ -1,7 +1,7 @@
 package  src.Intermedia;
 
 /* El Controlador superior */
-import src.ControlerCentral;
+import src.InicialitzadorCentral;
 
 /* Els sub Controladors */
 
@@ -13,9 +13,9 @@ import src.ControlerCentral;
 public class ControlerIntermedia_HumaMaquina_
 {
 /* Els objectes que necessito per aquest controlador */
-	private ControlerCentral	up;
+	private InicialitzadorCentral	up;
 
-	public ControlerIntermedia_HumaMaquina_ (ControlerCentral e)
+	public ControlerIntermedia_HumaMaquina_ (InicialitzadorCentral e)
 	{
 		up	= e;
 	}

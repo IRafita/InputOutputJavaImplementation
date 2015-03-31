@@ -1,14 +1,14 @@
 package src.System;
 
 /* El Controlador superior */
-import src.ControlerCentral;
+import src.InicialitzadorCentral;
 
 
 /* Els sub Controladors */
-import src.System.Input.ControlerInput;
-import src.System.Output.ControlerOutput;
+import src.System.Input.InicialitzadorInput;
+import src.System.Output.InicialitzadorOutput;
 
-import src.System.Modes.ControlerModes;
+import src.System.Modes.InicialitzadorModes;
 import src.System.Navigate.ControlerNavigate;
 
 
@@ -26,15 +26,15 @@ import src.System.Navigate.ControlerNavigate;
   * - Navegacio
   * - Modes
   */
-public class ControlerSystem
+public class InicialitzadorSystem
 {
 /* Els objectes que necessito per aquest controlador */
-	private ControlerCentral	up;
+	private InicialitzadorCentral	up;
 
-	private ControlerInput		input;
-	private ControlerOutput		output;
+	private InicialitzadorInput	input;
+	private InicialitzadorOutput	output;
 
-	private ControlerModes		modes;
+	private InicialitzadorModes	modes;
 	private ControlerNavigate	navigate;
 
 /**
@@ -48,15 +48,15 @@ public class ControlerSystem
   *
   * On tots ells son basics, menys el modes, que es per a simplificar l'Interpret
   */
-	public ControlerSystem (ControlerCentral e)
+	public InicialitzadorSystem (InicialitzadorCentral e)
 	{
 		up		= e;
 
-		input		= new ControlerInput	(this);
-		output		= new ControlerOutput	();
+		input		= new InicialitzadorInput	(this);
+		output		= new InicialitzadorOutput	();
 
-		modes		= new ControlerModes	(this);
-		navigate	= new ControlerNavigate	(this);
+		modes		= new InicialitzadorModes	(this);
+		navigate	= new ControlerNavigate		(this);
 	}
 
 /**

@@ -1,7 +1,7 @@
-package src.System.Modes.Mode.Command;
+package src.System.Modes.Command;
 
 /* El Controlador superior */
-import src.System.Modes.ControlerModes;
+import src.System.Modes.InicialitzadorModes;
 
 /**
   * Classe que no necessita res mes que poder imprimir per pantalla
@@ -9,9 +9,9 @@ import src.System.Modes.ControlerModes;
 public class WriteTypedCommand
 {
 /* Els objectes que necessito per aquesta classe */
-	private ControlerModes	up;
+	private InicialitzadorModes	up;
 
-	public WriteTypedCommand (ControlerModes e)
+	public WriteTypedCommand (InicialitzadorModes e)
 	{
 		System.out.println ("CommandWriteTyped: Inicialitzant les commandes digits");
 		up	= e;

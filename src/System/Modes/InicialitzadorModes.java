@@ -1,7 +1,7 @@
 package src.System.Modes;
 
 /* El Controlador superior */
-import src.System.ControlerSystem;
+import src.System.InicialitzadorSystem;
 
 // Aquest pot asustar pel nombre que pot arribar a qui?
 // El plantejament de makejar es curios. ja veurem que arribarem a fer
@@ -9,14 +9,14 @@ import src.System.ControlerSystem;
 import src.System.Modes.Mode.Normal;
 import src.System.Modes.Mode.WriteTyped;
 
-public class ControlerModes
+public class InicialitzadorModes
 {
 /* Els objectes que necessito per aquest controlador */
-	private ControlerSystem	up;
-	private Normal		normal;
-	private WriteTyped	WT;
+	private InicialitzadorSystem	up;
+	private Normal			normal;
+	private WriteTyped		WT;
 
-	public ControlerModes (ControlerSystem e)
+	public InicialitzadorModes (InicialitzadorSystem e)
 	{
 		System.out.println ("Controler Modes: No fa RES");
 		up	= e;
