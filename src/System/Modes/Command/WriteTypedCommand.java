@@ -30,7 +30,6 @@ public class WriteTypedCommand
 			case 'n': //normal
 				up.NormalNormalKey ();
 			}
-			e = 'q';
 		}
 		if (e != 'q')
 			up.WriteTypedKey ();

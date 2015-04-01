@@ -10,13 +10,16 @@ import src.InicialitzadorCentral;
   * no fer-li cas tal i com es
   * Passar olipicament d'ell i fer mes el que necessito, comunicacio entre altres controladors
   */
-public class ControlerIntermedia_HumaMaquina_
+public class InicialitzadorIntermedia
 {
 /* Els objectes que necessito per aquest controlador */
 	private InicialitzadorCentral	up;
 
-	public ControlerIntermedia_HumaMaquina_ (InicialitzadorCentral e)
+	public InicialitzadorIntermedia (InicialitzadorCentral e)
 	{
 		up	= e;
+	}
+	public void Begin	()
+	{
 	}
 }

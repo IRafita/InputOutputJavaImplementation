@@ -1,0 +1,53 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[catalan]{babel}
+
+\author{Sistach Reinoso, Arnau}
+\title{Inicialitzadors}
+
+\begin{document}
+\maketitle
+\newpage
+
+\section{Que és?}
+El Inicialitzador és un sistema força enginyós que permet entendre molt millor el programa en si.\\
+Permet fàcilment entendre el flux que tindrà tot seguit aquesta preciositat de programa.\\
+
+\section{Que fa?}
+Al inicialitzar, no fa res. Però en el moment que se li demana que inicialitzi, doncs aquí comença la màgia.\\
+Comença a partir de les dependències de cadascú a fer molta feina. Per definició necessita el coneixement ``importar'' de tots els objectes
+els quals els seus sub-controladors necessitaran.\\
+Així poc a poc, anirà fent que tot estigui connectat correctament tot entre tots ells.\\
+
+\section{Com funciona?}
+Esperem que el més bé possible. Clar està ;)
+\subsection{Inicialitzar}
+Defineix els seus fills.\\
+\subsubsection{Controlador}
+Només pot definir un controlador si estan al mateix packet ``Com ho vull definir jo''\\
+Un cop estem realment al packet del controlador:
+\begin{enumerate}
+\item Declara l'objecte definit.
+\item Comença a definir els controladors amb l'objecte controlat per defecte.
+\end{enumerate}
+\subsection{Al demanar connexions}
+Ara ja tenim tots els controladors definits i respectivament els objectes. A nosaltres en aquest nivell només ens interessa els controladors.\\
+
+Llavors cada controlador tindrà un mètode per a poder acceptar amb només un sol controlador extern de comunicació.\\
+Com que només en ve a ser un. Tenim la necessitat que els objectes se puguin comunicar amb més d'un controlador per arribar a fer tot el que
+vulguem.
+
+\subsubsection{Nova proposta}
+Ara tenim que realment impossible que un objecte se comuniqui amb més d'un controlador. Però si que podem crear un controlador que es comuniqui
+directament amb l'objecte, i altres objectes, que no seran controladors. Seran els comunicadors!\\
+
+Així que la nova proposta diu:
+\begin{itemize}
+\item[1] Objecte
+\item[1] Controlador
+\item[n] Comunicadors
+	\subitem ShareInput
+	\subitem ShareTranslate
+	\subitem Etcètera
+\end{itemize}
+\end{document}

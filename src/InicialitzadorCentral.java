@@ -2,7 +2,7 @@ package src;
 
 /* Els objectes que farem anar */
 import src.System.InicialitzadorSystem;
-import src.Intermedia.ControlerIntermedia_HumaMaquina_;
+import src.Intermedia.InicialitzadorIntermedia;
 
 /**
   * Tronc principal de tot el programa
@@ -13,7 +13,7 @@ public class InicialitzadorCentral
 {
 /* Els objectes que necessito per aquest controlador */
 	private InicialitzadorSystem			system;
-	private ControlerIntermedia_HumaMaquina_	intermedia;
+	private InicialitzadorIntermedia		intermedia;
 
 /**
   * Inicialitza tot el sistema
@@ -22,9 +22,16 @@ public class InicialitzadorCentral
 	{
 		System.out.println ("ControlerCentral: Sistema arrancant");
 		system		= new InicialitzadorSystem		(this);
-		intermedia	= new ControlerIntermedia_HumaMaquina_	(this);
+		intermedia	= new InicialitzadorIntermedia		(this);
 		System.out.println ("ControlerCentral: Adeu, Ja ha finalitzat");
 	}
 
 	public void Begin () { system.Normal (); }
+	public InicialitzadorIntermedia Kill	()
+	{
+		return intermedia;
+	}
+	public void Inicialitzar	()
+	{
+	}
 }
