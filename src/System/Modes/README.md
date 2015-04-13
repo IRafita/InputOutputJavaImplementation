@@ -1,3 +1,8 @@
+
+jue abr  2 14:25:44 CEST 2015
+Idea
+Controlador Mode -> Mode -> Hermes
+
 Idea
 
 Controlador Mode -> Mode -> Commanda -> Controlador Mode -> etc

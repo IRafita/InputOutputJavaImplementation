@@ -5,11 +5,7 @@ import src.InicialitzadorCentral;
 
 
 /* Els sub Controladors */
-import src.System.Input.InicialitzadorInput;
-import src.System.Output.InicialitzadorOutput;
-
-import src.System.Modes.InicialitzadorModes;
-import src.System.Navigate.ControlerNavigate;
+import src.System.Run.InicialitzadorRun;
 
 
 /**
@@ -31,11 +27,7 @@ public class InicialitzadorSystem
 /* Els objectes que necessito per aquest controlador */
 	private InicialitzadorCentral	up;
 
-	private InicialitzadorInput	input;
-	private InicialitzadorOutput	output;
-
-	private InicialitzadorModes	modes;
-	private ControlerNavigate	navigate;
+	private InicialitzadorRun	run;
 
 /**
   * Inicialitzant tot el apartat de controlar el systema
@@ -51,18 +43,37 @@ public class InicialitzadorSystem
 	public InicialitzadorSystem (InicialitzadorCentral e)
 	{
 		up		= e;
+	}
 
+}
+
+/*
+import src.System.Input.InicialitzadorInput;
+import src.System.Output.InicialitzadorOutput;
+
+import src.System.Modes.InicialitzadorModes;
+import src.System.Navigate.ControlerNavigate;
+*/
+
+/*
+public class InicialitzadorSystem
+	public InicialitzadorSystem (InicialitzadorCentral e)
+		/*
 		input		= new InicialitzadorInput	(this);
 		output		= new InicialitzadorOutput	();
 
 		modes		= new InicialitzadorModes	(this);
 		navigate	= new ControlerNavigate		(this);
-	}
+		*/
+/*	}
 
 /**
   * Pregunta caracters
+
+  Un inicialitzador... No hauria de pensar en aquestes cursilades!
   */
+  /*
 	public char ReadKey	()		{ return input.ReadKey	();	}
 	public void ShowWindows	(String e)	{ output.ShowWindows	(e);	}
 	public void Normal	()		{ modes.NormalNormalKey	();	}
-}
+	*/

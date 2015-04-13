@@ -9,12 +9,11 @@ public class ControlerKey
 	private InicialitzadorInput	up;
 	private ReadKey			key;
 
-	public ControlerKey (InicialitzadorInput e)
+	public ControlerKey (ReadKey e)
 	{
-		up	= e;
-		key	= new ReadKey (this);
+		key	= e;
 	}
 
-	public void Error (String e) { up.Error (e); }
+//	public void Error (String e) { up.Error (e); }
 	public char Read () { return key.Read (); }
 }

@@ -1,13 +1,12 @@
 package src.System.Modes;
 
-/* El Controlador superior */
+/* El Inicialitzador superior */
 import src.System.InicialitzadorSystem;
 
 // Aquest pot asustar pel nombre que pot arribar a qui?
 // El plantejament de makejar es curios. ja veurem que arribarem a fer
 /* Els sub Controladors */
-import src.System.Modes.Mode.Normal;
-import src.System.Modes.Mode.WriteTyped;
+import src.System.Modes.Char.InicialitzadorChar;
 
 public class InicialitzadorModes
 {

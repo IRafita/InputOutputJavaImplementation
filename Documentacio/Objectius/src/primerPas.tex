@@ -1,0 +1,50 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[catalan]{babel}
+
+\title{Objectius proposats}
+\author{Sistach Reinoso, Arnau}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+
+\part{Actual}
+\section{Plantejament}
+Funcionament amb el inicialitzador. Aquest concepte està dins de Conceptes. Així que no entrarem més en detalls.
+
+\section{Meta}
+Vull arribar a tenir:
+\begin{itemize}
+\item Intermedia.Commanda
+\item Mode.Automatic
+\item Mode.Char
+\item Mode.String
+\item Mode.Int
+\item Input.Key
+\item Output.Windows
+\item System.run
+\end{itemize}
+
+\section{Relació que necessitem}
+Per ara, com que només existiran aquests que estem creant serà força simple.\\
+
+El run ara per ara fa por, ja que sembla ser massa gran :)\\
+Veig que si programes en C, tindria avantatges ja que podria fer una simple punter de funcions...\\
+Per com penso que hauria de funcionar cada cop el veig millor en ansamblador, no pas en un d'alt nivell jajajaja.
+\subsection{Entre ells}
+System.run serà qui cridarà en Intermedia.Commanda perquè aquest pugui funcionar.\\
+Intermedia.Commanda serà qui cridarà Mode.Automatic\\
+Mode.Automatic cridarà de Mode.String i Mode.Int\\
+Mode.Char cridarà de Input.Key\\
+Mode.String cridarà de Mode.Char\\
+Mode.Int cridarà de Mode.Char\\
+Input.Key cridarà a Output.Windows per a poder solucionar problemes a nivell Input.\\
+Output.Windows no cridarà a ningú, ell mateix se pot solucionar els seus problemes.\\
+
+\newpage
+\part{Acabats}
+De moment cap ni un.
+
+\end{document}
